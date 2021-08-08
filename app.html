@@ -51,40 +51,120 @@
         </div>
     </nav>
     <!--====Nav Section End====-->
+
+    <!-- Page Content -->
+    <div class="container mt-5">
+
+    <!--Page Title-->
+    <div class="row">
+        <div class="col text-center">
+            <h1 class="mt-5">Sum Of 🧟‍♂️ All Fears</h1>
+            <hr />
+            <p class="lead">Calculations With Arrays</p>
+            <ul class="list-unstyled">
+                <li>
+                    Given a list of numbers and a number K, return
+                    whether any two numbers from the list add up
+                    to K.
+                </li>
+                <li>
+                    Example: given [10, 15, 3, 7] and K of 17, return
+                    true since 10 + 7 is 17.
+                </li>
+                <li>
+                    The basic challenge is to write a program that
+                    uses a hard-coded array of [10, 15, 3, 7] and
+                    allows the user to enter a value for K before
+                    running the algorithm and returning true or
+                    false.
+                </li>
+        </div>
+    </div>
+
+    <hr />
     <!--====Main Section Start====-->
     <main class="flex-shrink-0">
         <div class="container mt-5">
             <h1>Application Page</h1>
+             <!--Input Row-->
+        <div class="row">
+            <div class="col text-center">
+                <input type="number" id="inputK" size="15" placeholder="Enter a K variable">
+            </div>
+        </div>
 
+        <hr/>
+        <div class="row">
+            <div class="col text-center">
+                <input type="number" id="input3" size="3" value="3" placeholder="3...">
+            </div>
+            <div class="col text-center">
+                <input type="number" id="input7" size="3" value="7" placeholder="7...">
+            </div>
+            <div class="col text-center">
+                <input type="number" id="input10" size="3" value="10" placeholder="10...">
+            </div>
+            <div class="col text-center">
+                <input type="number" id="input15" size="3" value="15" placeholder="15...">
+            </div>
+         </div>
+
+        <hr />
+
+        <!--Submit Button-->
+        <div class="row mb-5">
+            <div class="col text-center">
+                <button class="btn btn-default" data-toggle="modal" data-target="#myModal" id="addForK">
+                    CALCULATE
+                </button>
+            </div>
+        </div>
+
+        <!--Results Modal Pop Up-->
+        <div id="myModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <h1>Results</h1><br />
+                        <span id="resultPlacement"></span>
+                    </div>
+                    <div class="modal-footer text-center">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
-     <!--====Footer Section Start====-->
-     <footer class="footer mt-auto py-3">
-         <div class="container-fluid">
-             <div class="row row-col-1 row-cols-lg-3 gy-2">
-                 <div class="col order-last order-lg-first text-light">
-                     <div><span class="text-muted">&copy;2021</span> John Flynn |
-                         johnbishopflynn@gmail.com</div>
-                 </div>
-                 <div class="col d-flex align-items-center justify-content-start justify-content-lg-center">
-                     <img src="img/John Flynn Blue Logo.png" alt="John Flynn Logo" height="24">
-                 </div>
-                 <div class="col d-flex align-items-center justify-content-start justify-content-lg-end">
-                     <div class="row">
-                         <div class="col social"><a href="https://www.linkedin.com/in/john-flynn-499358156/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-                         </div>
-                         <div class="col social"><a href="https://github.com/Fullsailer" target="_blank"><i class="fab fa-github fa-2x"></i></a>
-                         </div>
-                         <div class="col social"><a href="https://twitter.com/JohnBishopFlyn" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
-                         </div>
-                         <div class="col social"><a href="https://www.youtube.com/channel/UCfMobP1MWJTjR1EQykPHZVw" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-         </div>
-     </footer>
-     <!--====Footer Section End====-->
+    <!--====Footer Section Start====-->
+    <footer class="footer mt-auto py-3">
+        <div class="container-fluid">
+            <div class="row row-col-1 row-cols-lg-3 gy-2">
+                <div class="col order-last order-lg-first text-light">
+                    <div><span class="text-muted">&copy;2021</span> John Flynn |
+                        johnbishopflynn@gmail.com</div>
+                </div>
+                <div class="col d-flex align-items-center justify-content-start justify-content-lg-center">
+                    <img src="img/John Flynn Blue Logo.png" alt="John Flynn Logo" height="24">
+                </div>
+                <div class="col d-flex align-items-center justify-content-start justify-content-lg-end">
+                    <div class="row">
+                        <div class="col social"><a href="https://www.linkedin.com/in/john-flynn-499358156/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                        </div>
+                        <div class="col social"><a href="https://github.com/Fullsailer" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                        </div>
+                        <div class="col social"><a href="https://twitter.com/JohnBishopFlyn" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+                        </div>
+                        <div class="col social"><a href="https://www.youtube.com/channel/UCfMobP1MWJTjR1EQykPHZVw" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--====Footer Section End====-->
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
@@ -93,7 +173,7 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
     </script>
     <script src="js/site.js"></script>
-
+    
 </body>
 
 </html>
